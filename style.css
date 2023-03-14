@@ -19,8 +19,6 @@ section {
 }
 
 .ramito-violet-container {
-    /* width: 100%;
-    height: 100vh; */
     position: relative;
     overflow: hidden;
     background-color: #333366;
@@ -486,12 +484,6 @@ section {
     .imagen-detalle-flores,
     .ramito-imagen-botella {
         display: none;
-    }
-
-        {
-        top: -170px;
-        display: block;
-        left: -130px;
     }
 
     .imagen-detalle-flores-rosado {
