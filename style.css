@@ -4,7 +4,11 @@
     font-family: 'Sen', sans-serif;
     box-sizing: border-box;
     padding: 0;
-    margin: 10px;
+    margin: 0;
+}
+
+section {
+    max-width: 1920px;
 }
 
 .ramito-video-container {
@@ -244,9 +248,56 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 1376px) {
+    section {
+        max-width: 1376px;
+    }
+
+    .ramito-video-container {
+        height: auto;
+    }
+
+    .ramito-violet-container h3 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+    .section-tempranillo {
+        grid-template-columns: 1fr 1fr;
+        padding: 100px 30px;
+    }
+
+    .image-ramito {
+        height: 700px;
+    }
+
+    .section-navegar {
+        padding-bottom: 0px;
+    }
+
+    .section-navegar .ramito-navegar-imagen-botella {
+        position: relative;
+        left: 0px;
+        top: 100px;
+    }
+
+    .section-verdeo-sauvignon .image-navegar {
+        height: 700px;
+    }
+
+    .section-verdeo-sauvignon p {
+        width: 400px;
+    }
+
+    .section-mapa {
+        height: 500px;
+    }
+
+}
+
 @media screen and (max-width: 760px) {
 
-     .ramito-violet-container p {
+    .ramito-violet-container p {
         font-size: 1em;
         width: auto;
     }
