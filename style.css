@@ -354,7 +354,7 @@ section {
 
     .tempranillo-inner-section .organica-column {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
     /* Section Bobal */
@@ -369,6 +369,7 @@ section {
 
     .section-bobal-rosado-red {
         padding: 50px 30px;
+        position: relative;
     }
 
     .section-bobal-rosado-red h3 {
@@ -405,8 +406,7 @@ section {
     }
 
     .section-verdeo-sauvignon {
-        flex-direction: column;
-        padding-top: 0px;
+        padding-top: 50px;
         height: 500px;
         background: #3A5F46;
 
@@ -426,6 +426,11 @@ section {
         line-height: 40px;
         padding: 30px 0px;
         text-align: center;
+        width: 300px;
+    }
+
+    .section-verdeo-sauvignon p {
+        width: 300px;
     }
 
     .section-verdeo-sauvignon .logo-ramito-wrapper {
@@ -454,14 +459,14 @@ section {
 
     .image-raices {
         width: 100%;
-        height: 400px;
+        height: 400px !important;
         object-fit: cover;
     }
 
     .section-mapa {
         background-size: contain;
-        height: auto;
         overflow: hidden;
+        height: 300px;
     }
 
     .ramito-organic-mobile-title {
@@ -478,14 +483,21 @@ section {
         display: none;
     }
 
+    .imagen-detalle-flores,
     .ramito-imagen-botella {
-        height: 300px;
+        display: none;
     }
 
-    .imagen-detalle-flores,
-    .ramito-imagen-botella,
+        {
+        top: -170px;
+        display: block;
+        left: -130px;
+    }
+
     .imagen-detalle-flores-rosado {
-        display: none;
+        top: -170px;
+        display: block;
+        left: -130px;
     }
 }
 
