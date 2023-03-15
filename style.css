@@ -10,9 +10,11 @@
 :root {
     --blue: #333366;
     --white: #ffffff;
-    --h1fuenteDesktop: 140px;
-    --h1fuenteDesktop: 80px;
-}
+    --h3fuenteDesktop: 80px;
+    --h3fuenteMobile: 50px;
+    --pfuenteDesktop: 18px;
+} 
+
 
 section {
     max-width: 1920px;
@@ -44,9 +46,9 @@ section {
 }
 
 .ramito-violet-container h3 {
-    color: white;
+    color: var(--white);
     font-family: 'Sen', sans-serif;
-    font-size: var(--h1fuenteDesktop);
+    font-size: var(--h3fuenteDesktop);
     margin: 0;
     line-height: 110px;
     margin: -80px 0px;
@@ -94,10 +96,10 @@ section {
 }
 
 .section-tempranillo h3 {
-    font-size: 80px;
+    font-size: var(--h3fuenteDesktop);
     margin: 0;
     line-height: 70px;
-    color: #333366;
+    color: var(--blue);
     font-weight: black;
     letter-spacing: -3px;
 
@@ -105,8 +107,8 @@ section {
 
 .section-tempranillo p {
     width: 300px;
-    font-size: 18px;
-    color: #333366;
+    font-size: var(--pfuenteDesktop);
+    color: var(--blue);
 }
 
 /* Bobal Rosaro Section */
@@ -124,7 +126,7 @@ section {
 }
 
 .section-bobal-rosado-red h3 {
-    color: white;
+    color: var(--white);
     font-family: 'Sen', sans-serif;
     font-size: 80px;
     margin: 0;
@@ -132,7 +134,7 @@ section {
 }
 
 .section-bobal-rosado-red p {
-    color: white;
+    color: var(--white);
     font-family: 'Sen', sans-serif;
     font-size: 1.2em;
     width: 300px;
@@ -210,15 +212,15 @@ section {
 }
 
 .section-verdeo-sauvignon h3 {
-    color: white;
+    color: var(--white);
     font-family: 'Sen', sans-serif;
-    font-size: 80px;
+    font-size: var(--h3fuenteDesktop);
     margin: 0;
     line-height: 70px;
 }
 
 .section-verdeo-sauvignon p {
-    color: white;
+    color: var(--white);
     font-family: 'Sen', sans-serif;
     font-size: 1.2em;
     width: 300px;
@@ -323,21 +325,21 @@ section {
 
     .section-tempranillo {
         grid-template-columns: 1fr;
-        background-color: #333366;
+        background-color: var(--blue);
     }
 
     .section-tempranillo h3 {
-        font-size: 50px;
+        font-size: var(--h3fuenteMobile);
         line-height: 40px;
         padding: 30px 0px;
         text-align: center;
-        color: white;
+        color: var(--white);
     }
 
     .section-tempranillo p {
         width: 100%;
-        font-size: 18px;
-        color: white;
+        font-size: var(--pfuenteDesktop);
+        color: var(--white);
         text-align: center;
         padding: 0px 30px;
     }
@@ -378,7 +380,7 @@ section {
     }
 
     .section-bobal-rosado-red h3 {
-        font-size: 50px;
+        font-size: var(--h3fuenteMobile);
         line-height: 40px;
         padding: 30px 0px;
         text-align: center;
@@ -427,7 +429,7 @@ section {
     }
 
     .section-verdeo-sauvignon .titulo-texto h3 {
-        font-size: 50px;
+        font-size: var(--h3fuenteMobile);
         line-height: 40px;
         padding: 30px 0px;
         text-align: center;
@@ -479,7 +481,7 @@ section {
         position: relative;
         font-size: 40px;
         line-height: 30px;
-        color: white;
+        color: var(--white);
         text-align: center;
 
     }
