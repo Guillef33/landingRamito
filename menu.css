@@ -196,7 +196,7 @@
         left: 0;
         background-color: #333366;
         z-index: 99;
-        height: 60vh;
+        height: 70vh;
     }
 
     .ramito-violet-container-header .mobile-menu li {
@@ -204,7 +204,6 @@
         text-align: center;
         padding: 15px 0;
         width: 100%;
-        border-bottom: 1px solid white;
     }
 
     .ramito-violet-container-header .mobile-menu li:last-of-type {

@@ -80,6 +80,10 @@ section {
 }
 
 .imagen-detalle-flores-rosado {
+    display: none;
+}
+
+.imagen-detalle-flores-rosado-first {
     position: absolute;
     right: -150px;
     top: 50px;
@@ -393,6 +397,10 @@ section {
         padding-bottom: 0px;
     }
 
+    .section-navegar .imagen-barco {
+        padding-top: 0px;
+    }
+
     .section-navegar .image-navegar {
         width: 100%;
         object-fit: cover;
@@ -404,9 +412,10 @@ section {
     }
 
     .section-verdeo-sauvignon {
-        padding-top: 50px;
-        height: 500px;
+        /* padding-top: 50px;
+        height: 500px; */
         background: #3A5F46;
+        position: relative;
 
     }
 
@@ -415,14 +424,14 @@ section {
     }
 
     .section-verdeo-sauvignon .titulo-texto {
-        padding: 50px 30px;
+        padding: 0px 30px;
         text-align: center;
     }
 
     .section-verdeo-sauvignon .titulo-texto h3 {
         font-size: 50px;
         line-height: 40px;
-        padding: 30px 0px;
+        padding: 0px;
         text-align: center;
         width: 300px;
     }
@@ -486,10 +495,18 @@ section {
         display: none;
     }
 
-    .imagen-detalle-flores-rosado {
+    .imagen-detalle-flores-rosado-first {
         top: -170px;
         display: block;
         left: -130px;
+    }
+
+    .imagen-detalle-flores-rosado {
+        top: -170px;
+        display: block;
+        right: -130px;
+        height: 300px;
+        position: absolute;
     }
 }
 
