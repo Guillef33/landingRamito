@@ -64,7 +64,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-items: center;
-    background-image: linear-gradient(180deg, #954231 50%, white 50%);
+    background-image: linear-gradient(180deg, var(--blue) 50%, white 50%);
 }
 
 .ramito-imagen-organica {
@@ -380,6 +380,7 @@ section {
     .section-bobal-rosado-red {
         padding: 50px 30px;
         position: relative;
+        overflow: hidden;
     }
 
     .section-bobal-rosado-red h3 {
@@ -424,6 +425,7 @@ section {
         height: 500px; */
         background: #3A5F46;
         position: relative;
+        overflow: hidden;
 
     }
 
