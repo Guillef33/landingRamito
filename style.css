@@ -10,8 +10,8 @@
 :root {
     --blue: #333366;
     --white: #ffffff;
-    --h1fuenteDesktop: 140px;
-    --h1fuenteDesktop: 80px;
+    --h1fuenteDesktop: 130px;
+
 }
 
 section {
@@ -36,8 +36,20 @@ section {
 
 .organica-column {
     position: relative;
+    
 }
 
+.section-tempranillo:before {
+    background-image: url("./assets/floresRosada.png");
+    width: 500px;
+    content: " ";
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -225px;
+    background-size: 100%;
+    top: -50%;
+    height:500px;
+}
 .ramito-organic-mobile-title {
     display: none;
 
@@ -49,24 +61,39 @@ section {
     font-size: var(--h1fuenteDesktop);
     margin: 0;
     line-height: 110px;
-    margin: -80px 0px;
+    margin: -180px 0px;
     position: absolute;
 }
 
+
+
 .imagen-detalle-flores {
     position: absolute;
-    left: -150px;
+    left: -200px;
     top: 50%;
-    height: 300px;
+    height: 400px;
 }
 
 .tempranillo-inner-section {
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 2fr;
+    margin-top: 85px;
     place-items: center;
     background-image: linear-gradient(180deg, var(--blue) 50%, white 50%);
+    
 }
-
+.tempranillo-inner-section:before {
+    background-image: url(./assets/flowers.png);
+    width: 450px;
+    content: " ";
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -200px;
+    background-size: 100%;
+    height: 450px;
+    top: -275px;
+}
 .ramito-imagen-organica {
     width: 100%;
 }
@@ -83,7 +110,8 @@ section {
     place-items: center;
     position: relative;
     padding: 100px 0px;
-    overflow: hidden;
+    overflow-x: clip;
+    overflow-y: initial;
 }
 
 .imagen-detalle-flores-rosado {
@@ -107,56 +135,78 @@ section {
     letter-spacing: -3px;
 
 }
+.section-tempranillo .main-text{
+    margin-bottom: 30px;
+}
 
 .section-tempranillo p {
-    width: 300px;
-    font-size: 18px;
+    width: 450px;
+    font-weight: 600;
+    font-size: 23px;
     color: #333366;
 }
 
 /* Bobal Rosaro Section */
 
 .section-bobal-rosado {
+    background-image: linear-gradient(180deg, #954231 50%, white 50%);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 62%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    height: 1100px;
+}
+.rosado-imagen-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.rosado-imagen-wrapper img{
+    position: absolute;
+    right: 0px;
+    top: -100px;
 }
 
+    
 .section-bobal-rosado-red {
     background-color: #954231;
     display: flex;
     align-items: center;
-    padding-left: 300px;
+    padding-left: 80px;
 }
 
 .section-bobal-rosado-red h3 {
     color: white;
     font-family: 'Sen', sans-serif;
     font-size: 80px;
-    margin: 0;
+    margin: 0 0 80px 0;
     line-height: 70px;
 }
 
 .section-bobal-rosado-red p {
     color: white;
     font-family: 'Sen', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.4em;
     width: 300px;
 }
 
 .section-bobal-rosado-white {
     padding-top: 60px;
+    position: relative;
 }
 
 .image-ramito {
     position: absolute;
-    height: 900px;
+    width: 100%;
 }
 
 /* Section Navegar */
 
 .section-navegar {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.15fr 1fr;
     position: relative;
     padding-bottom: 50px;
 }
@@ -168,14 +218,14 @@ section {
 }
 
 .section-navegar .image-navegar {
-    height: 900px;
+    width: 100%;
 }
 
 .section-navegar .ramito-navegar-imagen-botella {
     height: 800px;
     position: absolute;
     left: 400px;
-    top: 300px;
+    bottom: -200px;
 }
 
 /* Section Verdejo */
@@ -188,7 +238,7 @@ section {
 }
 
 .section-verdeo-sauvignon .image-navegar {
-    height: 900px;
+    width: 95%;
 }
 
 .section-verdeo-sauvignon h3 {
@@ -208,10 +258,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+}
+.titulo-texto{
+    position: relative;
 }
 
 .section-verdeo-sauvignon .logo-ramito-cuadrado {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
 }
 
 .section-verdeo-sauvignon h3 {
@@ -238,7 +294,10 @@ section {
 }
 
 .section-raices-ibericas .image-raices {
-    height: 600px;
+    width: 96%;
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
 }
 
 .section-raices-ibericas .logo-raices-wrapper {
@@ -255,6 +314,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     height: 110vh;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -375,6 +435,7 @@ section {
 
     .section-bobal-rosado-white {
         padding-top: 0px;
+        
     }
 
     .section-bobal-rosado-red {
