@@ -72,6 +72,7 @@
     .section-tempranillo:before {
         display: none;
     }
+
     .ramito-video-container {
         display: none;
     }
@@ -198,10 +199,10 @@
         justify-content: center;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 100vw;
         position: absolute;
         top: 80px;
-        left: 0;
+        right: 0;
         background-color: #333366;
         z-index: 99;
         height: 70vh;
