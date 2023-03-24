@@ -36,7 +36,7 @@ section {
 
 .organica-column {
     position: relative;
-
+    
 }
 
 .section-tempranillo:before {
@@ -48,9 +48,8 @@ section {
     right: -225px;
     background-size: 100%;
     top: -50%;
-    height: 500px;
+    height:500px;
 }
-
 .ramito-organic-mobile-title {
     display: none;
 
@@ -82,9 +81,8 @@ section {
     margin-top: 85px;
     place-items: center;
     background-image: linear-gradient(180deg, var(--blue) 50%, white 50%);
-
+    
 }
-
 .tempranillo-inner-section:before {
     background-image: url("./assets/flowers.png");
     width: 450px;
@@ -96,7 +94,6 @@ section {
     height: 450px;
     top: -275px;
 }
-
 .ramito-imagen-organica {
     width: 100%;
 }
@@ -138,8 +135,7 @@ section {
     letter-spacing: -3px;
 
 }
-
-.section-tempranillo .main-text {
+.section-tempranillo .main-text{
     margin-bottom: 30px;
 }
 
@@ -151,12 +147,11 @@ section {
 }
 
 /* Bobal Rosaro Section */
-.section-bobal-rosado-mobile {
+.section-bobal-rosado-mobile{
     display: none;
 }
-
 .section-bobal-rosado {
-    background-image: linear-gradient(180deg, #954231 50%, white 50%);
+    background-image: linear-gradient(180deg, #954231 50%, #954231 50%);
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 62%;
@@ -165,20 +160,18 @@ section {
     margin-bottom: 50px;
     height: 1100px;
 }
-
-.rosado-imagen-wrapper {
+.rosado-imagen-wrapper{
     width: 100%;
     height: 100%;
     position: relative;
 }
-
-.rosado-imagen-wrapper img {
+.rosado-imagen-wrapper img{
     position: absolute;
     right: 0px;
     top: -100px;
 }
 
-
+    
 .section-bobal-rosado-red {
     background-color: #954231;
     display: flex;
@@ -212,10 +205,9 @@ section {
 }
 
 /* Section Navegar */
-.section-navegar-mobile {
+.section-navegar-mobile{
     display: none;
 }
-
 .section-navegar {
     display: grid;
     grid-template-columns: 1.15fr 1fr;
@@ -241,10 +233,9 @@ section {
 }
 
 /* Section Verdejo */
-.section-verdeo-sauvignon-mobile {
+.section-verdeo-sauvignon-mobile{
     display: none;
 }
-
 .section-verdeo-sauvignon {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -253,7 +244,9 @@ section {
 }
 
 .section-verdeo-sauvignon .image-navegar {
-    width: 95%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section-verdeo-sauvignon h3 {
@@ -276,9 +269,9 @@ section {
     position: absolute;
     bottom: 45px;
     width: 100%;
+    overflow: hidden;
 }
-
-.titulo-texto {
+.titulo-texto{
     position: relative;
 }
 
@@ -300,17 +293,21 @@ section {
     font-size: 1.2em;
     width: 300px;
 }
+.section-verdeo-sauvignon .titulo-texto{
+    overflow-y: inherit;
+    overflow-x: clip;
+}
 
 /* Section Raices Ibericas */
 
 .section-raices-ibericas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    margin-bottom: -10px;
 }
 
 .section-raices-ibericas .image-raices {
-    width: 96%;
+    width: 100%;
     display: block;
     margin-right: 0px;
     margin-left: auto;
@@ -338,41 +335,117 @@ section {
     section {
         max-width: 1376px;
     }
-
+    .section-bobal-rosado{
+        height: unset;
+    }
     .ramito-video-container {
         height: auto;
     }
+    .section-tempranillo h3{
+        font-size: 55px;
+        line-height: 48px;
+    }
+    .section-tempranillo p {
+        font-size: 1em;
+    }
+    .section-bobal-rosado.desktop .section-bobal-rosado-red{
+        padding-left: 0px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .section-bobal-rosado.desktop .rosado-texto-wrapper h3{
+        font-size: 55px;
+        line-height: 48px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+    .section-bobal-rosado.desktop .rosado-texto-wrapper p{
+        font-size: 1em;
+        padding-left: 15px;
 
+    }
+    .rosado-imagen-wrapper img{
+        display: none;
+    }
+    .imagen-detalle-flores{
+        height: 250px;
+        left: -125px;
+        top: 25%;
+    }
     .ramito-violet-container h3 {
-        font-size: 80px;
-        line-height: 70px;
+        font-size: 55px;
+        line-height: 48px;
     }
 
+    .tempranillo-inner-section:before {
+        width: 300px;
+        left: -150px;
+        height: 300px;
+        top: -150px;
+    }
+    .section-tempranillo:before {
+        width: 250px;
+        right: -125px;
+        top: -75%;
+        height: 250px;
+    }
+    .section-tempranillo p{
+        width: 100%;
+        text-align: center;
+    }
+    .section-tempranillo .main-text {
+        margin-bottom: 12px;
+    }
     .section-tempranillo {
-        grid-template-columns: 1fr 1fr;
-        padding: 100px 30px;
+        grid-template-columns: 1.4fr 1fr;
+        padding: 80px 20px;
     }
-
+    .tempranillo-inner-section {
+        grid-template-columns: 1fr 1.2fr;
+    }
+    .ramito-imagen-botella {
+        width: 100%;
+        height: unset;
+    }
+    .ramito-violet-container h3{
+        margin: -140px 0px;
+    }
     .image-ramito {
-        height: 700px;
+        height: 600px;
+        object-fit: cover;
     }
-
+    .section-verdeo-sauvignon h3 {
+        font-size: 55px;
+        line-height: 48px;
+        padding-left: 15px;
+    }
+    .section-verdeo-sauvignon p {
+        width: 350px;
+        font-size: 1em;
+    }
+    .logo-raices-cuadrado,.logo-ramito-cuadrado{
+        width: 60%;
+    }
     .section-navegar {
-        padding-bottom: 0px;
+        padding-bottom: 60px;
     }
 
     .section-navegar .ramito-navegar-imagen-botella {
         position: relative;
         left: 0px;
-        top: 100px;
+        height: unset;
+        width: 85%;
     }
-
+    .section-navegar .image-navegar {
+        object-fit: cover;
+    }
     .section-verdeo-sauvignon .image-navegar {
         height: 700px;
     }
 
     .section-verdeo-sauvignon p {
-        width: 400px;
+        width: 96%;
+        padding-left: 15px;
     }
 
     .section-mapa {
@@ -432,12 +505,11 @@ section {
 
     .tempranillo-inner-section {
         flex-direction: column-reverse;
-        margin-top: 80px;
+        margin-top:0px;
         margin-bottom: 0px;
         position: relative;
         overflow-x: clip;
     }
-
     .tempranillo-inner-section:before {
         width: 180px;
         left: -90px;
@@ -447,11 +519,9 @@ section {
         top: unset;
         z-index: 100;
     }
-
     .ramito-violet-container {
         overflow: initial;
     }
-
     .tempranillo-inner-section img {
         margin: 0 auto;
     }
@@ -462,18 +532,16 @@ section {
     }
 
     /* Section Bobal */
-    .section-bobal-rosado.desktop {
+    .section-bobal-rosado.desktop{
         display: none;
     }
-
-    .section-bobal-rosado-mobile {
+    .section-bobal-rosado-mobile{
         display: block;
         position: relative;
         padding: 60px 30px;
         overflow-x: clip;
         background-color: #954231;
     }
-
     .section-bobal-rosado-mobile:before {
         background-image: url("./assets/floresRosada.png");
         content: " ";
@@ -486,8 +554,7 @@ section {
         top: -90px;
         z-index: 100;
     }
-
-    .section-bobal-rosado-mobile h3 {
+    .section-bobal-rosado-mobile h3{
         font-size: 45px;
         line-height: 40px;
         margin-top: 30px;
@@ -495,23 +562,22 @@ section {
         text-align: center;
         color: white;
     }
-
-    .section-bobal-rosado-mobile p {
+    .section-bobal-rosado-mobile p{
         color: white;
         font-family: 'Sen', sans-serif;
         font-size: 1em;
         width: 100%;
         text-align: center;
     }
-
-
+    
+    
     .section-bobal-rosado {
         grid-template-columns: 1fr;
     }
 
     .section-bobal-rosado-white {
         padding-top: 0px;
-
+        
     }
 
     .section-bobal-rosado-red {
@@ -537,20 +603,16 @@ section {
         object-fit: cover;
         height: 400px;
     }
-
-    .section-navegar-mobile {
+    .section-navegar-mobile{
         display: block;
     }
-
-    .section-navegar.desktop {
+    .section-navegar.desktop{
         display: none;
     }
-
-    .section-navegar-mobile img {
+    .section-navegar-mobile img{
         width: 100%;
         margin-bottom: -5px;
     }
-
     .section-navegar {
         grid-template-columns: 1fr;
         padding-bottom: 0px;
@@ -569,32 +631,25 @@ section {
     .section-navegar .ramito-navegar-imagen-botella {
         display: none;
     }
-
-    .section-verdeo-sauvignon.desktop {
+    .section-verdeo-sauvignon.desktop{
         display: none;
     }
-
-    .section-verdeo-sauvignon-mobile {
+    .section-verdeo-sauvignon-mobile{
         display: block;
         background-color: #3A5F46;
         padding-bottom: 80px;
     }
-
-    .section-verdeo-sauvignon-mobile .main-image {
+    .section-verdeo-sauvignon-mobile .main-image{
         width: 100%;
     }
-
-    .section-verdeo-sauvignon-mobile .logo-ramito-cuadrado,
-    .section-verdeo-sauvignon-mobile .logo-raices-cuadrado {
+    .section-verdeo-sauvignon-mobile .logo-ramito-cuadrado,.section-verdeo-sauvignon-mobile .logo-raices-cuadrado{
         display: block;
         margin: auto;
         width: 65%;
     }
-
-    .section-verdeo-sauvignon-mobile .logo-ramito-cuadrado {
+    .section-verdeo-sauvignon-mobile .logo-ramito-cuadrado{
         margin-bottom: 50px;
     }
-
     .section-verdeo-sauvignon-mobile p {
         color: white;
         font-family: 'Sen', sans-serif;
@@ -602,14 +657,12 @@ section {
         width: 100%;
         text-align: center;
     }
-
-    .section-verdeo-sauvignon-mobile .titulo-texto {
+    .section-verdeo-sauvignon-mobile .titulo-texto{
         padding: 45px 30px;
         text-align: center;
         color: #fff;
         position: relative;
     }
-
     .section-verdeo-sauvignon-mobile .titulo-texto:before {
         background-image: url("./assets/floresVerde.png");
         content: " ";
@@ -622,7 +675,6 @@ section {
         top: -90px;
         z-index: 100;
     }
-
     .section-verdeo-sauvignon-mobile .titulo-texto h3 {
         font-size: 40px;
         line-height: 35px;
@@ -630,7 +682,6 @@ section {
         padding: 0px;
         text-align: center;
     }
-
     .section-verdeo-sauvignon {
         background: #3A5F46;
         position: relative;
@@ -663,11 +714,9 @@ section {
     .section-verdeo-sauvignon .logo-ramito-wrapper {
         display: none;
     }
-
-    .section-raices-ibericas.desktop {
+    .section-raices-ibericas.desktop{
         display: none;
     }
-
     .section-raices-ibericas {
         grid-template-columns: 1fr;
     }
@@ -755,9 +804,6 @@ section {
     flex-direction: column;
     justify-content: center;
 }
-
-/* Menu styles */
-
 .ramito-violet-container-header {
     display: flex;
     justify-content: space-between;
@@ -826,7 +872,25 @@ section {
     width: 800px;
     text-align: center;
 }
-
+@media screen and (max-width: 1376px) {
+    .ramito-violet-container-header{
+        flex-direction: column;
+    }
+    .ramito-violet-container-header img{
+        height: 100px;
+    }
+    .ramito-violet-container-header .desktop-menu {
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .ramito-violet-container p {
+        font-size: 1.15em;
+        width: 100%;
+    }
+    .ramito-violet-main-text {
+        padding: 40px 0px 40px 0px;
+    }
+}
 /* Mobile view */
 @media only screen and (max-width: 767px) {
     .section-tempranillo:before {
@@ -959,10 +1023,10 @@ section {
         justify-content: center;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 100vw;
         position: absolute;
         top: 80px;
-        left: 0;
+        right: 0;
         background-color: #333366;
         z-index: 99;
         height: 70vh;
@@ -1006,4 +1070,33 @@ section {
     }
 
 
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.image {
+    background-image: url('https://via.placeholder.com/500x500');
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.texto-scroll {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 30px;
 }

@@ -10,7 +10,7 @@
 :root {
     --blue: #333366;
     --white: #ffffff;
-    --h1fuenteDesktop: 1♥;
+    --h1fuenteDesktop: 130px;
 
 }
 
@@ -136,7 +136,7 @@ section {
 
 }
 .section-tempranillo .main-text{
-    margin-bottom: ♥;
+    margin-bottom: 30px;
 }
 
 .section-tempranillo p {
@@ -464,7 +464,7 @@ section {
     .ramito-violet-wrapper {
         display: flex;
         justify-content: center;
-        padding: 0px ♥;
+        padding: 0px 30px;
     }
 
 
@@ -484,7 +484,7 @@ section {
     .section-tempranillo h3 {
         font-size: 45px;
         line-height: 40px;
-        margin-top: ♥;
+        margin-top: 30px;
         margin-bottom: 50px;
         text-align: center;
         color: white;
@@ -495,7 +495,7 @@ section {
         font-size: 16px;
         color: white;
         text-align: center;
-        padding: 0px ♥;
+        padding: 0px 30px;
     }
 
     .tempranillo-inner-section {
@@ -538,7 +538,7 @@ section {
     .section-bobal-rosado-mobile{
         display: block;
         position: relative;
-        padding: 60px ♥;
+        padding: 60px 30px;
         overflow-x: clip;
         background-color: #954231;
     }
@@ -557,7 +557,7 @@ section {
     .section-bobal-rosado-mobile h3{
         font-size: 45px;
         line-height: 40px;
-        margin-top: ♥;
+        margin-top: 30px;
         margin-bottom: 50px;
         text-align: center;
         color: white;
@@ -581,7 +581,7 @@ section {
     }
 
     .section-bobal-rosado-red {
-        padding: 50px ♥;
+        padding: 50px 30px;
         position: relative;
         overflow: hidden;
     }
@@ -589,7 +589,7 @@ section {
     .section-bobal-rosado-red h3 {
         font-size: 50px;
         line-height: 40px;
-        padding: ♥ 0px;
+        padding: 30px 0px;
         text-align: center;
     }
 
@@ -658,7 +658,7 @@ section {
         text-align: center;
     }
     .section-verdeo-sauvignon-mobile .titulo-texto{
-        padding: 45px ♥;
+        padding: 45px 30px;
         text-align: center;
         color: #fff;
         position: relative;
@@ -694,7 +694,7 @@ section {
     }
 
     .section-verdeo-sauvignon .titulo-texto {
-        padding: 0px ♥;
+        padding: 0px 30px;
         text-align: center;
     }
 
@@ -753,7 +753,7 @@ section {
         display: block;
         position: relative;
         font-size: 40px;
-        line-height: ♥;
+        line-height: 30px;
         color: white;
         text-align: center;
 
@@ -771,13 +771,13 @@ section {
     .imagen-detalle-flores-rosado-first {
         top: -170px;
         display: block;
-        left: -1♥;
+        left: -130px;
     }
 
     .imagen-detalle-flores-rosado {
         top: -170px;
         display: block;
-        right: -1♥;
+        right: -130px;
         height: 300px;
         position: absolute;
     }
