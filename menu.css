@@ -66,7 +66,25 @@
     width: 800px;
     text-align: center;
 }
-
+@media screen and (max-width: 1376px) {
+    .ramito-violet-container-header{
+        flex-direction: column;
+    }
+    .ramito-violet-container-header img{
+        height: 100px;
+    }
+    .ramito-violet-container-header .desktop-menu {
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .ramito-violet-container p {
+        font-size: 1.15em;
+        width: 100%;
+    }
+    .ramito-violet-main-text {
+        padding: 40px 0px 40px 0px;
+    }
+}
 /* Mobile view */
 @media only screen and (max-width: 767px) {
     .section-tempranillo:before {
